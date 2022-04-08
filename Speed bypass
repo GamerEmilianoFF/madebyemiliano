@@ -1,197 +1,89 @@
---by GamerEmilianoFF
+--made by Emiliano
 
- 
-
---Objects
+-- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
 
-local main = Instance.new("Frame")
+local Frame = Instance.new("Frame")
 
-local title = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
 
-local Headless = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
 
-local OneLeg = Instance.new("TextButton")
-
-local close = Instance.new("TextButton")
-
-local openmain = Instance.new("Frame")
-
-local open = Instance.new("TextButton")
-
- 
+local TextButton = Instance.new("TextButton")
 
 --Properties:
 
-ScreenGui.Parent = game.CoreGui
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
- 
+ScreenGui.ResetOnSpawn = false
 
-main.Name = "main"
+Frame.Parent = ScreenGui
 
-main.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(183, 101, 255)
 
-main.BackgroundColor3 = Color3.new(0, 0, 0)
+Frame.Position = UDim2.new(0.369825214, 0, 0.423832893, 0)
 
-main.Position = UDim2.new(0.0203577988, 0, 0.641277611, 0)
+Frame.Size = UDim2.new(0, 116, 0, 080)
 
-main.Size = UDim2.new(0, 332, 0, 211)
+Frame.Active = true
 
-main.Visible = false
+Frame.Draggable = true
 
-main.Active = true
+TextLabel.Parent = Frame
 
-main.Draggable = true
+TextLabel.BackgroundColor3 = Color3.fromRGB(128, 55, 255)
 
- 
+TextLabel.Size = UDim2.new(0, 116, 0, 109)
 
-title.Name = "title"
+TextLabel.Font = Enum.Font.SciFi
 
-title.Parent = main
+TextLabel.Text = "ª"
 
-title.BackgroundColor3 = Color3.new(1, 0, 1)
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 
-title.Size = UDim2.new(0, 332, 0, 31)
+TextLabel.TextSize = 15.000
 
-title.Font = Enum.Font.GothamBold
+TextLabel_2.Parent = Frame
 
-title.Text = "made by GamerEmilianoFF"
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(128, 55, 255)
 
-title.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_2.Position = UDim2.new(0, 0, 0.846153915, 0)
 
-title.TextSize = 17
+TextLabel_2.Size = UDim2.new(0, 116, 0, 50)
 
- 
+TextLabel_2.Font = Enum.Font.SciFi
 
-Headless.Name = "Headless"
+TextLabel_2.Text = "Made By GamerEmilianoFF"
 
-Headless.Parent = main
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 
-Headless.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+TextLabel_2.TextSize = 10.000
 
-Headless.Position = UDim2.new(0.036144577, 0, 0.379146934, 0)
+TextButton.Parent = Frame
 
-Headless.Size = UDim2.new(0, 110, 0, 50)
+TextButton.BackgroundColor3 = Color3.fromRGB(100, 202, 155)
 
-Headless.Font = Enum.Font.GothamBold
+TextButton.Position = UDim2.new(0.0664556995, 0, 0.212307781, 0)
 
-Headless.Text = "trash talk"
+TextButton.Size = UDim2.new(0, 99, 0 , 50)
 
-Headless.TextColor3 = Color3.new(0, 0, 0)
+TextButton.Font = Enum.Font.Cartoon
 
-Headless.TextScaled = true
+TextButton.Text = "click for speed"
 
-Headless.TextSize = 10
+TextButton.TextColor3 = Color3.fromRGB(0, 0 , 0)
 
-Headless.TextWrapped = true
+TextButton.TextSize = 15.000
 
-Headless.MouseButton1Down:connect(function()
+TextButton.MouseButton1Down:connect(function()
 
-  
+    plr = game:GetService('Players').LocalPlayer
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerEmilianoFF/script/main/Trash%20gui",true))()
+        local char = plr.Character
 
-end)
+        char.HumanoidRootPart.Velocity = char.HumanoidRootPart.CFrame.lookVector * 300
 
-OneLeg.Name = "One Leg"
-
-OneLeg.Parent = main
-
-OneLeg.BackgroundColor3 = Color3.new(0.333333, 1, 0)
-
-OneLeg.Position = UDim2.new(0.614457846, 0, 0.379146934, 0)
-
-OneLeg.Size = UDim2.new(0, 110, 0, 50)
-
-OneLeg.Font = Enum.Font.GothamBold
-
-OneLeg.Text = "speed bypass"
-
-OneLeg.TextColor3 = Color3.new(0, 0, 0)
-
-OneLeg.TextScaled = true
-
-OneLeg.TextSize = 14
-
-OneLeg.TextWrapped = true
-
-OneLeg.MouseButton1Down:connect(function()
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerEmilianoFF/madebyemiliano/main/Speed%20bypass",true))()
-
-end)
-
-close.Name = "close"
-
-close.Parent = main
-
-close.BackgroundColor3 = Color3.new(1, 0, 0)
-
-close.Position = UDim2.new(0.879518092, 0, 0, 0)
-
-close.Size = UDim2.new(0, 40, 0, 31)
-
-close.Font = Enum.Font.GothamBlack
-
-close.Text = "X"
-
-close.TextColor3 = Color3.new(0, 0, 0)
-
-close.TextScaled = true
-
-close.TextSize = 14
-
-close.TextWrapped = true
-
-close.MouseButton1Down:connect(function()
-
-main.Visible = false
-
-openmain.Visible = true
-
-end)
-
- 
-
-openmain.Name = "openmain"
-
-openmain.Parent = ScreenGui
-
-openmain.BackgroundColor3 = Color3.new(1, 1, 1)
-
-openmain.Position = UDim2.new(.001, 0, .79, 0)
-
-openmain.Size = UDim2.new(0, 100, 0, 28)
-
-openmain.Active = true
-
-openmain.Draggable = true
-
- 
-
-open.Name = "open"
-
-open.Parent = openmain
-
-open.BackgroundColor3 = Color3.new(1, 0, 0)
-
-open.Size = UDim2.new(0, 100, 0, 28)
-
-open.Font = Enum.Font.GothamBold
-
-open.Text = "OPEN"
-
-open.TextColor3 = Color3.new(0, 0, 0)
-
-open.TextSize = 18
-
-open.TextWrapped = true
-
-open.MouseButton1Down:connect(function()
-
-openmain.Visible = false
-
-main.Visible = true
+        wait()
 
 end)
