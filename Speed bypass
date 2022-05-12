@@ -1,3 +1,4 @@
+
 --made by Emiliano
 
 -- Instances:
@@ -22,9 +23,9 @@ Frame.Parent = ScreenGui
 
 Frame.BackgroundColor3 = Color3.fromRGB(183, 101, 255)
 
-Frame.Position = UDim2.new(0.369825214, 0, 0.423832893, 0)
+Frame.Position = UDim2.new(0.65000, 0, 0.01000000000, 0)
 
-Frame.Size = UDim2.new(0, 116, 0, 080)
+Frame.Size = UDim2.new(0, 136, 0, 120)
 
 Frame.Active = true
 
@@ -34,11 +35,11 @@ TextLabel.Parent = Frame
 
 TextLabel.BackgroundColor3 = Color3.fromRGB(128, 55, 255)
 
-TextLabel.Size = UDim2.new(0, 116, 0, 109)
+TextLabel.Size = UDim2.new(0, 136, 0, 109)
 
 TextLabel.Font = Enum.Font.SciFi
 
-TextLabel.Text = "ª"
+TextLabel.Text = ""
 
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 
@@ -50,7 +51,7 @@ TextLabel_2.BackgroundColor3 = Color3.fromRGB(128, 55, 255)
 
 TextLabel_2.Position = UDim2.new(0, 0, 0.846153915, 0)
 
-TextLabel_2.Size = UDim2.new(0, 116, 0, 50)
+TextLabel_2.Size = UDim2.new(0, 136, 0, 50)
 
 TextLabel_2.Font = Enum.Font.SciFi
 
@@ -64,9 +65,9 @@ TextButton.Parent = Frame
 
 TextButton.BackgroundColor3 = Color3.fromRGB(100, 202, 155)
 
-TextButton.Position = UDim2.new(0.0664556995, 0, 0.212307781, 0)
+TextButton.Position = UDim2.new(0.0111000, 0, 0.212307781, 0)
 
-TextButton.Size = UDim2.new(0, 99, 0 , 50)
+TextButton.Size = UDim2.new(0, 136, 0 , 74)
 
 TextButton.Font = Enum.Font.Cartoon
 
@@ -82,7 +83,7 @@ TextButton.MouseButton1Down:connect(function()
 
         local char = plr.Character
 
-        char.HumanoidRootPart.Velocity = char.HumanoidRootPart.CFrame.lookVector * 300
+        char.HumanoidRootPart.Velocity = char.HumanoidRootPart.CFrame.lookVector * 270
 
         wait()
 
