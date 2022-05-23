@@ -21,61 +21,31 @@ ScreenGui.ResetOnSpawn = false
 
 Frame.Parent = ScreenGui
 
-Frame.BackgroundColor3 = Color3.fromRGB(183, 101, 255)
+Frame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 
 Frame.Position = UDim2.new(0.65000, 0, 0.01000000000, 0)
 
-Frame.Size = UDim2.new(0, 136, 0, 120)
+Frame.Size = UDim2.new(0, 145, 0, 130)
 
 Frame.Active = true
 
 Frame.Draggable = true
 
-TextLabel.Parent = Frame
-
-TextLabel.BackgroundColor3 = Color3.fromRGB(128, 55, 255)
-
-TextLabel.Size = UDim2.new(0, 136, 0, 109)
-
-TextLabel.Font = Enum.Font.SciFi
-
-TextLabel.Text = ""
-
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-
-TextLabel.TextSize = 15.000
-
-TextLabel_2.Parent = Frame
-
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(128, 55, 255)
-
-TextLabel_2.Position = UDim2.new(0, 0, 0.846153915, 0)
-
-TextLabel_2.Size = UDim2.new(0, 136, 0, 50)
-
-TextLabel_2.Font = Enum.Font.SciFi
-
-TextLabel_2.Text = "Made By GamerEmilianoFF"
-
-TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-
-TextLabel_2.TextSize = 10.000
-
 TextButton.Parent = Frame
 
-TextButton.BackgroundColor3 = Color3.fromRGB(100, 202, 155)
+TextButton.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 
-TextButton.Position = UDim2.new(0.0111000, 0, 0.212307781, 0)
+TextButton.Position = UDim2.new(0.10011, 0, 0.212307781, 0)
 
-TextButton.Size = UDim2.new(0, 136, 0 , 74)
+TextButton.Size = UDim2.new(0, 120, 0 , 74)
 
 TextButton.Font = Enum.Font.Cartoon
 
 TextButton.Text = "click for speed"
 
-TextButton.TextColor3 = Color3.fromRGB(0, 0 , 0)
+TextButton.TextColor3 = Color3.fromRGB(255, 255 , 255)
 
-TextButton.TextSize = 15.000
+TextButton.TextSize = 18.000
 
 TextButton.MouseButton1Down:connect(function()
 
@@ -88,3 +58,9 @@ TextButton.MouseButton1Down:connect(function()
         wait()
 
 end)
+
+
+
+
+
+
